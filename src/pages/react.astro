@@ -1,0 +1,11 @@
+---
+import ReactTest from "../components/ReactTest";
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout>
+  <div class="min-h-screen flex items-center justify-center p-6">
+    <ReactTest client:load />
+  </div>
+</Layout>
