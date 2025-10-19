@@ -1,27 +1,41 @@
 ---
-import DashboardImage from '../assets/dashboard.png?url';
+import DashboardImage from "../assets/dashboard.png?url";
+import { MoveUpRight } from "@lucide/astro";
 ---
 
-<section class="pt-32 pb-20 bg-gradient-to-br from-primary-50 to-primary-100">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
+<section class="pt-32 pb-10 bg-gradient-to-br from-primary-50 to-primary-500">
+  <div class="container mx-auto px-6 max-h-screen">
+    <div class="flex flex-col gap-12 items-center">
       <div>
-        <h1 class="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-          POS Profesional, Modern, dan Bisa Disesuaikan dengan Kebutuhan Bisnis Anda
+        <h1 class="text-4xl text-gray-900 mb-6 leading-tight text-center">
+          POS Profesional, Modern, dan Bisa Disesuaikan dengan Kebutuhan Bisnis
+          Anda
         </h1>
-        <p class="text-xl text-gray-600 mb-8">
-          Kelola kasir, inventori, dan laporan penjualan dalam satu platform yang mudah digunakan
+        <p class="text-xl text-gray-600 mb-8 text-center">
+          Dari fitur inti hingga add-on pilihan, Positif memberi kebebasan bagi
+          bisnis Anda untuk menyesuaikan dan bertumbuh.
         </p>
-        <button class="bg-primary-500 text-white px-8 py-4 rounded-full text-lg hover:bg-primary-600 shadow-lg">
-          Coba Gratis
-        </button>
-        <!-- Mulai Berlangganan -->
-        <button class="ml-4 text-primary-500 font-semibold hover:text-primary-600">
-          Mulai Berlangganan →
-        </button>
+        <div class="flex flex-row justify-center">
+          <button
+            class="bg-primary-500 text-white px-4 py-2 rounded-full text-md hover:bg-primary-600 shadow-lg"
+          >
+            Coba Gratis
+            <MoveUpRight class="inline-block ml-2" color="#ffffff" />
+          </button>
+          <!-- Mulai Berlangganan -->
+          <button
+            class="ml-4 text-primary-500 font-semibold hover:text-primary-600"
+          >
+            Mulai Berlangganan
+          </button>
+        </div>
       </div>
-      <div class="bg-white rounded-2xl shadow-2xl p-8">
-        <img src={DashboardImage} alt="Dashboard Preview" class="w-full rounded-lg" />
+      <div class="bg-white rounded-2xl shadow-2xl p-4">
+        <img
+          src={DashboardImage}
+          alt="Dashboard Preview"
+          class="w-full rounded-lg"
+        />
       </div>
     </div>
   </div>

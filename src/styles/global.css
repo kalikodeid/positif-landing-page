@@ -11,8 +11,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-satoshi: Satoshi, 'sans-serif';
-  --font-display: 'Satoshi', 'sans-serif';
+  --font-satoshi: Satoshi-Variable, 'sans-serif';
+  --font-display: 'Satoshi-Variable', 'sans-serif';
   /* Tertiary Colors */
   --color-tertiary-50: #ffedee;
   --color-tertiary-100: #ffc6c9;
@@ -25,17 +25,6 @@
   --color-tertiary-800: #8c272d;
   --color-tertiary-900: #6b1d22;
 
-  /* Black/Text Colors */
-  --color-text-50: #e7e7e7;
-  --color-text-100: #b6b6b6;
-  --color-text-200: #929292;
-  --color-text-300: #606060;
-  --color-text-400: #414141;
-  --color-text-500: #121212;
-  --color-text-600: #101010;
-  --color-text-700: #0d0d0d;
-  --color-text-800: #0a0a0a;
-  --color-text-900: #080808;
 
   /* Green Colors */
   --color-green-50: #e6fae6;
@@ -73,30 +62,28 @@
   --color-secondary-800: #8c8627;
   --color-secondary-900: #6b661d;
 
-  /* Base font size */
-  --font-size-base: 1rem;      /* 16px */
-  --line-height-base: 1.5rem;
+  --text-xs: 0.625rem;    /* 10px */
+  --text-sm: 0.812rem;    /* 13px */
+  --text-md: 1rem;        /* 16px */
+  --text-lg: 1.25rem;     /* 20px */
+  --text-xl: 1.562rem;    /* 25px */
+  --text-2xl: 1.938rem;   /* 31px */
+  --text-3xl: 2.438rem;   /* 39px */
+  --text-4xl: 3.062rem;   /* 49px */
+  --text-5xl: 3.812rem;   /* 61px */
+  
+  --text-xs--line-height: 1rem;
+  --text-sm--line-height: 1.25rem;
+  --text-md-line-height: 1.5rem;
+  --text-lg-line-height: 1.75rem;
+  --text-xl-line-height: 1.9rem;
+  --text-2xl-line-height: 2.25rem;
+  --text-3xl-line-height: 2.5rem;
+  --text-4xl-line-height: 2.8rem;
+  --text-5xl-line-height: 3rem;
 
-  /* Modular scale (×1.25) */
-  --font-size-xs: 0.625rem;    /* 10px */
-  --font-size-sm: 0.812rem;    /* 13px */
-  --font-size-md: 1rem;        /* 16px */
-  --font-size-lg: 1.25rem;     /* 20px */
-  --font-size-xl: 1.562rem;    /* 25px */
-  --font-size-2xl: 1.938rem;   /* 31px */
-  --font-size-3xl: 2.438rem;   /* 39px */
-  --font-size-4xl: 3.062rem;   /* 49px */
-  --font-size-5xl: 3.812rem;   /* 61px */
+}
 
-  /* Matching line heights (optional) */
-  --line-height-xs: 1rem;
-  --line-height-sm: 1.25rem;
-  --line-height-md: 1.5rem;
-  --line-height-lg: 1.75rem;
-  --line-height-xl: 1.9rem;
-  --line-height-2xl: 2.25rem;
-  --line-height-3xl: 2.5rem;
-  --line-height-4xl: 2.8rem;
-  --line-height-5xl: 3rem;
-
+:root{
+  font-family: Satoshi-Variable;
 }
