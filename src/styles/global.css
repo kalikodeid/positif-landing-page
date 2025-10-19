@@ -1,6 +1,18 @@
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../assets/fonts/Satoshi-Variable.woff2') format('woff2'),
+    url('../assets/fonts/Satoshi-Variable.woff') format('woff'),
+    url('../assets/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
 @import "tailwindcss";
 
 @theme {
+  --font-satoshi: Satoshi, 'sans-serif';
+  --font-display: 'Satoshi', 'sans-serif';
   /* Tertiary Colors */
   --color-tertiary-50: #ffedee;
   --color-tertiary-100: #ffc6c9;
@@ -61,59 +73,3 @@
   --color-secondary-800: #8c8627;
   --color-secondary-900: #6b661d;
 }
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('../assets/fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('../assets/fonts/Satoshi-Regular.woff') format('woff'),
-       url('../assets/fonts/Satoshi-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('../assets/fonts/Satoshi-Bold.woff2') format('woff2'),
-       url('../assets/fonts/Satoshi-Bold.woff') format('woff'),
-       url('../assets/fonts/Satoshi-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('../assets/fonts/Satoshi-Medium.woff2') format('woff2'),
-       url('../assets/fonts/Satoshi-Medium.woff') format('woff'),
-       url('../assets/fonts/Satoshi-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('../assets/fonts/Satoshi-Regular-Italic.woff2') format('woff2'),
-       url('../assets/fonts/Satoshi-Regular-Italic.woff') format('woff'),
-       url('../assets/fonts/Satoshi-Regular-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('../assets/fonts/Satoshi-Bold-Italic.woff2') format('woff2'),
-       url('../assets/fonts/Satoshi-Bold-Italic.woff') format('woff'),
-       url('../assets/fonts/Satoshi-Bold-Italic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('../assets/fonts/Satoshi-Medium-Italic.woff2') format('woff2'),
-       url('../assets/fonts/Satoshi-Medium-Italic.woff') format('woff'),
-       url('../assets/fonts/Satoshi-Medium-Italic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-/* Add more weights as needed (Light: 300, Black: 900, etc.) */
