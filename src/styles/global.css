@@ -72,4 +72,31 @@
   --color-secondary-700: #b5ad32;
   --color-secondary-800: #8c8627;
   --color-secondary-900: #6b661d;
+
+  /* Base font size */
+  --font-size-base: 1rem;      /* 16px */
+  --line-height-base: 1.5rem;
+
+  /* Modular scale (×1.25) */
+  --font-size-xs: 0.625rem;    /* 10px */
+  --font-size-sm: 0.812rem;    /* 13px */
+  --font-size-md: 1rem;        /* 16px */
+  --font-size-lg: 1.25rem;     /* 20px */
+  --font-size-xl: 1.562rem;    /* 25px */
+  --font-size-2xl: 1.938rem;   /* 31px */
+  --font-size-3xl: 2.438rem;   /* 39px */
+  --font-size-4xl: 3.062rem;   /* 49px */
+  --font-size-5xl: 3.812rem;   /* 61px */
+
+  /* Matching line heights (optional) */
+  --line-height-xs: 1rem;
+  --line-height-sm: 1.25rem;
+  --line-height-md: 1.5rem;
+  --line-height-lg: 1.75rem;
+  --line-height-xl: 1.9rem;
+  --line-height-2xl: 2.25rem;
+  --line-height-3xl: 2.5rem;
+  --line-height-4xl: 2.8rem;
+  --line-height-5xl: 3rem;
+
 }
