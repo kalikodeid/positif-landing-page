@@ -31,3 +31,4 @@ jobs:
         with:
           name: astro-site
           path: dist
+          retention-days: 1
