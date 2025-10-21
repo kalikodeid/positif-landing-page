@@ -3,40 +3,40 @@ import DashboardImage from "../assets/dashboard.png?url";
 import { MoveUpRight } from "@lucide/astro";
 ---
 
-<section class="pt-32 bg-linear-to-b from-white from-20% to-primary-500 h-[105vh]">
-  <div class="container mx-auto px-6 h-full">
-    <div class="flex flex-col gap-12 items-center flex-1 h-full">
-      <div>
-        <h1 class="text-4xl text-gray-900 mb-6 leading-tight text-center">
+<section class="pt-16 sm:pt-24 md:pt-32 bg-linear-to-b from-white from-20% to-primary-500 min-h-screen lg:h-[105vh]">
+  <div class="container mx-auto px-4 sm:px-6 h-full">
+    <div class="flex flex-col gap-8 sm:gap-10 md:gap-12 items-center flex-1 h-full">
+      <div class="w-full">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 mb-4 sm:mb-6 leading-tight text-center px-2">
           POS Profesional, Modern, dan Bisa Disesuaikan dengan Kebutuhan Bisnis
           Anda
         </h1>
-        <p class="text-xl text-gray-600 mb-8 text-center">
+        <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 text-center max-w-3xl mx-auto px-2">
           Dari fitur inti hingga add-on pilihan, Positif memberi kebebasan bagi
           bisnis Anda untuk menyesuaikan dan bertumbuh.
         </p>
-        <div class="flex flex-row justify-center">
+        <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-0 px-4">
           <button
-            class="bg-primary-500 text-white px-4 py-2 rounded-full text-md hover:bg-primary-600 shadow-lg"
+            class="bg-primary-500 text-white px-6 py-3 rounded-full text-sm sm:text-md hover:bg-primary-600 shadow-lg transition-colors w-full sm:w-auto"
           >
             Coba Gratis
-            <MoveUpRight class="inline-block ml-2" color="#ffffff" />
+            <MoveUpRight class="inline-block ml-2 w-4 h-4 sm:w-5 sm:h-5" color="#ffffff" />
           </button>
           <button
-            class="ml-4 text-primary-500 font-semibold hover:text-primary-600"
+            class="sm:ml-4 text-primary-500 font-semibold hover:text-primary-600 transition-colors w-full sm:w-auto"
           >
             Mulai Berlangganan
           </button>
         </div>
       </div>
       <div
-        class="relative flex-1 w-full max-w-5xl bg-radial from-white/100 to-white/30 rounded-t-xl shadow-2xl px-4 pt-4 overflow-hidden"
+        class="relative flex-1 w-full max-w-5xl bg-radial from-white/100 to-white/30 rounded-t-xl shadow-2xl overflow-hidden"
       >
-        <div
-          class="bg-cover bg-top h-full w-full"
-          style={`background-image: url('${DashboardImage}');`}
-        >
-        </div>
+        <img 
+          src={DashboardImage} 
+          alt="Dashboard Preview" 
+          class="w-full h-full object-cover object-top"
+        />
       </div>
     </div>
   </div>
