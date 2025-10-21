@@ -3,9 +3,9 @@ import DashboardImage from "../assets/dashboard.png?url";
 import { MoveUpRight } from "@lucide/astro";
 ---
 
-<section class="pt-32 pb-10 bg-linear-to-b from-white from-20% to-primary-500">
-  <div class="container mx-auto px-6 max-h-screen">
-    <div class="flex flex-col gap-12 items-center">
+<section class="pt-32 bg-linear-to-b from-white from-20% to-primary-500 h-[105vh]">
+  <div class="container mx-auto px-6 h-full">
+    <div class="flex flex-col gap-12 items-center flex-1 h-full">
       <div>
         <h1 class="text-4xl text-gray-900 mb-6 leading-tight text-center">
           POS Profesional, Modern, dan Bisa Disesuaikan dengan Kebutuhan Bisnis
@@ -22,7 +22,6 @@ import { MoveUpRight } from "@lucide/astro";
             Coba Gratis
             <MoveUpRight class="inline-block ml-2" color="#ffffff" />
           </button>
-          <!-- Mulai Berlangganan -->
           <button
             class="ml-4 text-primary-500 font-semibold hover:text-primary-600"
           >
@@ -30,12 +29,14 @@ import { MoveUpRight } from "@lucide/astro";
           </button>
         </div>
       </div>
-      <div class="bg-radial from-white/100 to-white/30 rounded-2xl shadow-2xl p-4 overflow-hidden max-h-[60vh]">
-        <img
-          src={DashboardImage}
-          alt="Dashboard Preview"
-          class="w-full rounded-lg object-cover object-top"
-        />
+      <div
+        class="relative flex-1 w-full max-w-5xl bg-radial from-white/100 to-white/30 rounded-t-xl shadow-2xl px-4 pt-4 overflow-hidden"
+      >
+        <div
+          class="bg-cover bg-top h-full w-full"
+          style={`background-image: url('${DashboardImage}');`}
+        >
+        </div>
       </div>
     </div>
   </div>
