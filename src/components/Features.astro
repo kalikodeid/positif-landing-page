@@ -1,185 +1,146 @@
 ---
+import Fitur1Image from '../assets/fitur1.png?url';
+import Fitur2Image from '../assets/fitur2.png?url';
+import Fitur3Image from '../assets/fitur3.png?url';
+import Fitur4Image from '../assets/fitur4.png?url';
+import Fitur5Image from '../assets/fitur5.png?url';
 ---
 
-<!-- Feature blocks can be composed where needed by passing content via the slot or by importing this file and wrapping blocks -->
+<!-- Feature blocks can be composed where needed by passing content via the slot or by importing this file and wrapping blocks --><!-- Feature 1: Dashboard Overview -->
+<div class="h-[200vh]">
+  <section class="py-20 h-[20%]">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col gap-12 items-center text-center">
+        <div>
+          <h2 class="text-4xl font-bold mb-6">
+            Fitur Unggulan Untuk Mempermudah Operasional Bisnis Anda
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Sistem POS yang dilengkapi dengan berbagai fitur canggih untuk
+            membantu mengelola bisnis Anda lebih efisien
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Feature 1: Dashboard Overview -->
-<section class="py-20 bg-linear-to-br from-primary-50 to-white">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="bg-white rounded-2xl shadow-xl p-8">
-        <div class="space-y-4">
-          <div class="bg-primary-100 rounded-lg p-4">
-            <div class="text-sm text-gray-600">Dashboard Overview</div>
+  <!-- Feature 2: Product Management -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-row gap-12 items-center">
+        <div class="order-2 md:order-1 w-[40%]">
+          <h2 class="text-4xl font-bold mb-6">Manajemen Produk & Penjualan</h2>
+          <p class="text-gray-600 mb-6">
+            Kelola inventori, harga, dan kategori produk dengan mudah. Pantau
+            performa penjualan secara real-time
+          </p>
+        </div>
+        <div class="order-0 p-8 w-[60%]">
+          <div class="bg-white rounded-lg p-6">
+            <div class="space-y-4">
+              <img src={Fitur1Image} alt="Fitur 1" class="w-max h-auto" />
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <h2 class="text-4xl font-bold mb-6">
-          Fitur Unggulan Untuk Mempermudah Operasional Bisnis Anda
-        </h2>
-        <p class="text-gray-600 mb-6">
-          Sistem POS yang dilengkapi dengan berbagai fitur canggih untuk
-          membantu mengelola bisnis Anda lebih efisien
-        </p>
-        <ul class="space-y-3">
-          <li class="flex items-start">
-            <svg
-              class="w-6 h-6 text-primary-500 mr-2 mt-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              ><path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"></path></svg
-            ><span class="text-gray-700"
-              >Dashboard lengkap dengan analitik real-time</span>
-          </li>
-          <li class="flex items-start">
-            <svg
-              class="w-6 h-6 text-primary-500 mr-2 mt-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              ><path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"></path></svg
-            ><span class="text-gray-700"
-              >Kelola transaksi dengan cepat dan mudah</span>
-          </li>
-        </ul>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Feature 2: Product Management -->
-<section class="py-20 bg-white">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="order-2 md:order-1">
-        <h2 class="text-4xl font-bold mb-6">
-          Manajemen Produk & Penjualan
-        </h2>
-        <p class="text-gray-600 mb-6">
-          Kelola inventori, harga, dan kategori produk dengan mudah. Pantau
-          performa penjualan secara real-time
-        </p>
-        <button class="text-primary-500 font-semibold hover:text-primary-600"
-          >Pelajari Lebih Lanjut →</button
-        >
-      </div>
-      <div
-        class="order-1 md:order-2 bg-primary-50 rounded-2xl shadow-xl p-8"
-      >
-        <div class="bg-white rounded-lg p-6">
+  <!-- Feature 3: Inventory & Purchases -->
+  <section class="py-20 bg-linear-to-br from-primary-50 to-white">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="bg-white rounded-2xl shadow-xl p-8">
           <div class="space-y-4">
-            <div class="text-sm text-gray-600">Product Management</div>
+            <div class="bg-primary-100 rounded-lg p-4">
+              <div class="text-sm text-gray-600">Inventory & Purchases</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold mb-6">Inventori & Pembelian</h2>
+          <p class="text-gray-600 mb-6">
+            Pantau stok barang secara real-time, kelola supplier, dan otomasi
+            pemesanan ulang
+          </p>
+          <button class="text-primary-500 font-semibold hover:text-primary-600"
+            >Pelajari Lebih Lanjut →</button
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 4: Mobile & Web App -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-4xl font-bold mb-6">
+            Aplikasi Kasir Mobile & Website
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Akses sistem POS Anda dari mana saja melalui aplikasi mobile dan web
+            dashboard
+          </p>
+          <button class="text-primary-500 font-semibold hover:text-primary-600"
+            >Pelajari Lebih Lanjut →</button
+          >
+        </div>
+        <div class="order-1 md:order-2 bg-primary-50 rounded-2xl shadow-xl p-8">
+          <div class="flex gap-4">
+            <div class="bg-white rounded-lg p-4 flex-1">
+              <div class="text-sm text-gray-600">Mobile App</div>
+            </div><div class="bg-primary-500 rounded-lg p-4 flex-1">
+              <div class="text-sm text-white">Web Dashboard</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Feature 3: Inventory & Purchases -->
-<section class="py-20 bg-linear-to-br from-primary-50 to-white">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="bg-white rounded-2xl shadow-xl p-8">
-        <div class="space-y-4">
-          <div class="bg-primary-100 rounded-lg p-4">
-            <div class="text-sm text-gray-600">Inventory & Purchases</div>
-          </div>
+  <!-- Feature 5: Multi-Outlet Support -->
+  <section class="py-20 bg-linear-to-br from-primary-50 to-white">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <div class="text-sm text-gray-600">Multi-Outlet Support</div>
         </div>
-      </div>
-      <div>
-        <h2 class="text-4xl font-bold mb-6">Inventori & Pembelian</h2>
-        <p class="text-gray-600 mb-6">
-          Pantau stok barang secara real-time, kelola supplier, dan otomasi
-          pemesanan ulang
-        </p>
-        <button class="text-primary-500 font-semibold hover:text-primary-600"
-          >Pelajari Lebih Lanjut →</button
-        >
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Feature 4: Mobile & Web App -->
-<section class="py-20 bg-white">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="order-2 md:order-1">
-        <h2 class="text-4xl font-bold mb-6">
-          Aplikasi Kasir Mobile & Website
-        </h2>
-        <p class="text-gray-600 mb-6">
-          Akses sistem POS Anda dari mana saja melalui aplikasi mobile dan
-          web dashboard
-        </p>
-        <button class="text-primary-500 font-semibold hover:text-primary-600"
-          >Pelajari Lebih Lanjut →</button
-        >
-      </div>
-      <div
-        class="order-1 md:order-2 bg-primary-50 rounded-2xl shadow-xl p-8"
-      >
-        <div class="flex gap-4">
-          <div class="bg-white rounded-lg p-4 flex-1">
-            <div class="text-sm text-gray-600">Mobile App</div>
-          </div><div class="bg-primary-500 rounded-lg p-4 flex-1">
-            <div class="text-sm text-white">Web Dashboard</div>
-          </div>
+        <div>
+          <h2 class="text-4xl font-bold mb-6">Multi-Outlet Support</h2>
+          <p class="text-gray-600 mb-6">
+            Kelola beberapa outlet atau cabang bisnis Anda dari satu dashboard
+            terpusat
+          </p>
+          <button class="text-primary-500 font-semibold hover:text-primary-600"
+            >Pelajari Lebih Lanjut →</button
+          >
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Feature 5: Multi-Outlet Support -->
-<section class="py-20 bg-linear-to-br from-primary-50 to-white">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="bg-white rounded-2xl shadow-xl p-8">
-        <div class="text-sm text-gray-600">Multi-Outlet Support</div>
-      </div>
-      <div>
-        <h2 class="text-4xl font-bold mb-6">Multi-Outlet Support</h2>
-        <p class="text-gray-600 mb-6">
-          Kelola beberapa outlet atau cabang bisnis Anda dari satu dashboard
-          terpusat
-        </p>
-        <button class="text-primary-500 font-semibold hover:text-primary-600"
-          >Pelajari Lebih Lanjut →</button
-        >
+  <!-- Feature 6: Sales Reports & Tax -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-4xl font-bold mb-6">
+            Laporan Penjualan & Perpajakan
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Dapatkan insight mendalam tentang performa bisnis Anda dengan
+            laporan yang komprehensif
+          </p>
+          <button class="text-primary-500 font-semibold hover:text-primary-600"
+            >Pelajari Lebih Lanjut →</button
+          >
+        </div>
+        <div class="order-1 md:order-2 bg-primary-50 rounded-2xl shadow-xl p-8">
+          <div class="text-sm text-gray-600">Sales Reports & Tax</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Feature 6: Sales Reports & Tax -->
-<section class="py-20 bg-white">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="order-2 md:order-1">
-        <h2 class="text-4xl font-bold mb-6">
-          Laporan Penjualan & Perpajakan
-        </h2>
-        <p class="text-gray-600 mb-6">
-          Dapatkan insight mendalam tentang performa bisnis Anda dengan
-          laporan yang komprehensif
-        </p>
-        <button class="text-primary-500 font-semibold hover:text-primary-600"
-          >Pelajari Lebih Lanjut →</button
-        >
-      </div>
-      <div
-        class="order-1 md:order-2 bg-primary-50 rounded-2xl shadow-xl p-8"
-      >
-        <div class="text-sm text-gray-600">Sales Reports & Tax</div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
