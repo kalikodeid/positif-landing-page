@@ -10,5 +10,11 @@ export default defineConfig({
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      hmr: {
+        protocol: 'ws',
+        host: 'localhost',
+      },
+    },
   },
 });
